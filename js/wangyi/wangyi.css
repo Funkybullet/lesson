@@ -1,0 +1,102 @@
+.m-page-03 .swing.z-anim {
+    -webkit-animation: ani4_qiuqian 6s cubic-bezier(.455,.03,.515,.955) infinite;
+    animation: ani4_qiuqian 6s cubic-bezier(.455,.03,.515,.955) infinite;
+}
+.m-page-03 .swing {
+    display: block;
+    position: absolute;
+    left: 226px;
+    top: -180.25px;
+    width: 478px;
+    height: 1038px;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/swing.88545d6c8e1ac798465e367f8e5357ab.png) no-repeat;
+    -webkit-transform-origin: -16.10878661% -29.76878613%;
+    transform-origin: -16.10878661% -29.76878613%;
+}
+.m-page-03 .swing .leg2 {
+    display: block;
+    position: absolute;
+    left: 185.375px;
+    top: 958px;
+    width: 130px;
+    height: 32px;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/leg2.d7bc44a91b6974450f2ccc430846c63d.png) no-repeat;
+    -webkit-transform-origin: 91.1538461538462% 33.59375%;
+    transform-origin: 91.1538461538462% 33.59375%;
+    -webkit-animation: ani7_leg2 8s ease infinite;
+    animation: ani7_leg2 8s ease infinite;
+}
+.m-page-03 .swing .leg2 .part {
+    display: block;
+    position: absolute;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/leg2-part.8f70bb7fc789a70bc78c48aa7718a765.png) no-repeat;
+    left: -27.75px;
+    top: -10.5px;
+    width: 57px;
+    height: 44px;
+    -webkit-transform-origin: 78.9473684210526% 57.9545454545455%;
+    transform-origin: 78.9473684210526% 57.9545454545455%;
+}
+.m-page-03 .swing .leg1 {
+    display: block;
+    position: absolute;
+    left: 290.375px;
+    top: 955.25px;
+    width: 63px;
+    height: 130px;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/leg1.b1df6a7d1a794d36fbd0e1277733e1cf.png) no-repeat;
+    -webkit-transform-origin: 17.8571428571429% 13.3653846153846%;
+    transform-origin: 17.8571428571429% 13.3653846153846%;
+    -webkit-animation: ani5_leg1 8s ease infinite;
+    animation: ani5_leg1 8s ease infinite;
+}
+.m-page-03 .swing .leg1 .part {
+    display: block;
+    position: absolute;
+    left: 26.25px;
+    top: 102.5px;
+    width: 39px;
+    height: 62px;
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/leg1-part.f2f17703a6af8fd2af5e0f5a9f320623.png) no-repeat;
+    -webkit-transform-origin: 69.2307692307692% 23.3870967741935%;
+    transform-origin: 69.2307692307692% 23.3870967741935%;
+}
+.m-page-03 .swing .head, .m-page-03 .swing .neck {
+    display: block;
+    position: absolute;
+    left: 451.125px;
+    top: 855.5px;
+    width: 51px;
+    height: 42px;
+}
+.m-page-03 .swing .neck {
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/neck.07a0013beff9796ed79c2cea542e5af2.png) no-repeat;
+    -webkit-transform-origin: 23.0392156862745% 86.3095238095238%;
+    transform-origin: 23.0392156862745% 86.3095238095238%;
+}
+.m-page-03 .swing .head {
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/head.90bf892023d7df0522a4b53fc07e38df.png) no-repeat;
+    -webkit-transform-origin: 32.843137254902% 65.4761904761905%;
+    transform-origin: 32.843137254902% 65.4761904761905%;
+    -webkit-animation: ani2_head 8s ease infinite;
+    animation: ani2_head 8s ease infinite;
+}
+.m-page-03 .swing .head, .m-page-03 .swing .neck {
+    display: block;
+    position: absolute;
+    left: 451.125px;
+    top: 855.5px;
+    width: 51px;
+    height: 42px;
+}
+.m-page-03 .swing .head .part {
+    background: url(//s5.music.126.net/static_public/5c21db8d4684556c72180904/head-part.22d4381c4bd6cb1c3afd2b1bfcfe22f1.png) no-repeat;
+    left: 20px;
+    top: 2px;
+    width: 40px;
+    height: 47px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: block;
+    position: absolute;
+}
