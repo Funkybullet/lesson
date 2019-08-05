@@ -8,7 +8,7 @@ Block Formatting Context(块级格式化上下文)
 3. 垂直方向的外边距会发生边距折叠（包括父子元素，和兄弟元素）
 
 #BFC的创建条件
-1. overflow的值不为visible
+1. overflow的值不为visible  initial, unset
 2. float不为none
 3. 行内快inline-block
 4. 表格单元display：table-cell；

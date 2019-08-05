@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "NR",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye1.png",
+        "selectedIconPath": "images/shouye.png"
+      },
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "菜单",
+        "iconPath": "images/caidan1.png",
+        "selectedIconPath": "images/caidan.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/wode1.png",
+        "selectedIconPath": "images/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
