@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+
+</head>
+<body>
+    <!-- 录像机 -->
+    <canvas id="webglcanvas"></canvas>
+    <script>
+        var canvas,  //3D 容器
+            camera,  //相机
+            scene,  //场景   摆放背景  人物上场
+            group;  //添加到 sing? xing   的组织单元
+        var mouseX = 0, mouseY = 0;
+        init();
+        animate();
+        function init(){
+            canvas = document.getElementById('webglcanvas');
+            // canvas.width = window.innerWidth
+            // 3D世界是Camera拍出来的
+            camera = new THREE.PersectiveCamera(60, window.innerWidth/window.innerHeight, 1,2000);
+            //正前方
+            camera.position.z = 500;
+
+            //场景
+            scene = new THREE.scene();
+            scene.background = new THREE.Color(0xffffff);
+            group = new THREE.Group();
+            scene.add(group);
+            // 图片加载进来
+            var loader = new THREE.TextureLoader();
+            loader.load('')
+        }
+        function anination(){}
+
+    </script>
+    
+</body>
+</html>
