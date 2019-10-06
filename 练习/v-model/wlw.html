@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+        <hr>
+        <h3>文本多选框</h3>
+        <input type="checkbox" id="isTure" v-model="isTure">
+        <label for="isTure">{{isTure}}</label>
+        <hr>
+        <input type="checkbox" id="1"  value="1" v-model="web">
+        <input type="checkbox" id="2" value="2"v-model="web">
+        <input type="checkbox" id="3" value="3" v-model="web">
+        <p>{{web}}</p>
+        <br>
+        <p>  请选择性别：
+            <input type="radio" id="sex" value="男" v-model="sex">
+            <label for="sex">男</label>
+            <input type="radio" id="sex" value="女" v-model="sex">
+            <label for="sex">女</label>
+            <p>您的性别是:{{sex}}</p>
+        </p>
+        <br>
+        <p>
+            <div :class="className">颜色判断</div>
+            <div :class="{classA:isOK}">颜色判断</div>
+            <div :class="[classA,classB]">颜色判断</div>
+        </p>
+        <hr>
+        <p>
+            <input type="checkbox" id="isOK" v-model="isOK">
+            <label for="isOK">isOK={{isOK}}</label>
+        </p>
+        <br>
+        <div :class="isOK?classA:classB">颜色判断</div>
+        <br>
+        <!-- <div :style="{color:red;fontSize:font}">1231123</div> -->
+        <p>
+                <button @click="add">加分</button>
+                <div v-wlw="color">总分:{{num}}</div>
+         </p>
+    </div>
+    <br>
+        
+    <style>
+    .classA{
+        color: red;
+    }
+    .classB{
+        font-size: 150%;
+    }
+    </style>
+    <script>
+    Vue.directive("wlw",function(el,binding){
+        el.style="color:"+binding.value;
+    });
+    var app = new Vue ({
+        el:'#app',
+        data:{
+            message:'123',
+            isTure:true,
+            web:[],
+            sex:'',
+            className:'classA',
+            isOK:false,
+            classA:'classA',
+            classB:'classB',
+            num:1,
+            color:'red'
+            // red:'red',
+            // fontSize:'150%'
+        },
+        methods:{
+            add:function() {
+                return this.num++;
+            }
+        }
+        
+    })
+    </script>
+</body>
+</html>

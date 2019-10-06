@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Extend</title>
+</head>
+<body>
+    <div id="wlw"></div>
+
+    <script>
+        var WLW = Vue.extend({
+            template:"<p ><a :href='WlwUrl'>{{WlwName}}</a></p>",
+            data:function() {
+                return{
+                    WlwName:'翁良伟',
+                    WlwUrl:"https://www.baidu.com"
+                }
+            }
+        });
+        new WLW().$mount("#wlw")
+    </script>
+</body>
+</html>
