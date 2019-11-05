@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>组件</title>
 </head>
 <body>
     <div id="app">
-        <wlw ></wlw>
+        <component :is="who"></component>
+        <button @click="chancge">点击切换</button>
     </div>
     <script>
+    var componentA = {
+        template:`<div style=color:red;>你好</div>`
+    }
+    var componentB = {
+        template:`<div style=color:green;>我爱你</div>`
+    }
+    var componentC = {
+        template:`<div style=color:pink;>中国</div>`
+    }
     var app = new Vue({
-        el:'#app',
+        el:"#app",
+        data:{
+            who:"componentA"
+        },
         components:{
-            "wlw":{
-                template:`<div>翁良伟</div>`
+            "componentA":componentA,
+            "componentB":componentB,
+            "componentC":componentC,
+        },
+        methods:{
+            chancge:function() {
+                if(this.who=="componentA") {
+                    this.who="componentB"
                 }
+                else if (this.who=="componentB"){
+                    this.who="componentC"
+                }
+                else{
+                    this.who="componentA"
+                }
+            }
         }
     })
+    
+    
     </script>
 </body>
 </html>

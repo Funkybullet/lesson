@@ -1,0 +1,1 @@
+const obj = {alg:'sha256',type:'123'};
