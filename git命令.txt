@@ -1,0 +1,21 @@
+1. git init cd. git/(进入)  cd ../（退出）
+2. git add 暂存 git commit -m（确定） “wrote a ~~ file” 为这次的提交说上一个理由（“wrote a ~~ file”）
+3. git status 确认一些当前仓库情况
+4. git diff ~~ 比较一下修改了什么
+5. git log 查看当前有多少个版本   git log --pretty=oneline 更简单明了的查看有多少个版本
+6. git reset --hard HEAD^ 回到上一个版本(一个^就是往前回一次)   git reset --hard~~~~（版本前五位数）回到任何一个版本
+7. git reflog 将这次做过的所有操作提交记录出来
+8. git checkout -- ~~撤销到暂存区上一个版本（适用于没提交到暂存区，没add）
+9. git reset HEAD ~~~重置已经保存到暂存区的文件
+10. 不小心add了修改过的文件可以用第九步再用第八步来还原版本
+rm ~~ 删除文件
+
+
+
+- 上传  GitHub上新建一个new repository 填写文件名字及内容  
+ 
+ git remote add origin https:// + 地址
+ git push -u origin master
+
+ - 修改完代码同步服务器  使用上面第三条 再添加进暂存区 
+ git push origin master    
