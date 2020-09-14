@@ -1,0 +1,6 @@
+mysql -u root -p  进入mysql环境下
+show database; 显示数据库
+create database test 创建数据库
+use test 使用数据库
+select database(); 显示正在使用的数据库
+source  G:\workspace-git\koa-noteBook\sql\test.sql  执行sql文件
